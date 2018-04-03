@@ -1,0 +1,314 @@
+
+/*
+  ===========================
+    Reset
+  ===========================
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #324c5b;
+  overflow: hidden;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/*
+  ===========================
+    General Styles
+  ===========================
+*/
+
+.g-btn {
+  border: 0;
+  background-color: transparent;
+}
+
+.g-btn:focus {
+  outline: none;
+  overflow: none;
+}
+
+/*
+  ===========================
+    Blocks
+  ===========================
+*/
+
+/*
+  ---------------------------
+    Header
+  ---------------------------
+*/
+
+.b-header {
+  padding: 0px 10%;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(248,249,252,.95);
+  box-shadow: 0 2px 4px 0 rgba(11,47,61,0.2);
+}
+
+.b-header_logo {
+  height: 67.5px;
+  display: flex;
+  align-items: center;
+}
+
+.b-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 67.5px;
+  margin: 0;
+}
+
+.b-menu_item {
+  list-style: none;
+}
+
+.b-menu_item__link {
+  list-style: none;
+  text-decoration: none !important;
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  color: #324c5b;
+  font-weight: 600;
+  transition: .5s;
+}
+
+.b-menu_item__link:hover {
+  color:#00D7CB;
+}
+
+.b-header-responsive {
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.b-main-content {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+/*
+  ---------------------------
+    Start
+  ---------------------------
+*/
+
+.b-start {
+  width: 100%;
+  height: 100vh;
+}
+
+.triangle {
+  width: 100px;
+  height: 100px;
+  border-left: 70px solid #fff;
+  border-right: 0px solid #fff;
+  border-bottom: 100vh solid transparent;
+}
+
+.b-start_content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.b-start_content--right {
+  background-color:#00D7CB;
+  align-items: center;
+}
+
+.b-start_content--left {
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.b-start_logo {
+  width: 100%;
+  margin-left: 10%;
+}
+
+.b-start_download {
+  margin: 30px 20px 100px 20px;
+}
+
+.b-start_smartphone {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px; 
+}
+
+/*
+  ---------------------------
+    Estaciones
+  ---------------------------
+*/
+
+.b-estaciones_content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b-estaciones_content--right {
+  flex-direction: column;
+}
+
+.b-estaciones_content--left {
+  align-items: center;
+  background-color: #F7EBD1;
+}
+
+.b-estaciones_image {
+  margin-top: 30px;
+}
+
+.b-estaciones_text {
+  text-align: center;
+}
+
+/*
+  ---------------------------
+    Biciestaciones
+  ---------------------------
+*/
+
+.b-servicios_content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 180px;
+}
+
+.b-servicios_name {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+/*
+  ===========================
+    Utils
+  ===========================
+*/
+
+.u-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.u-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.u-center-text {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*
+  ===========================
+    States
+  ===========================
+*/
+
+.is-hidden {
+  display: none;
+}
+
+.is-visible {
+  display: flex !important;
+}
+
+/*
+  ===========================
+    Responsive
+  ===========================
+*/
+
+@media (max-width: 768px){
+
+  .b-header {
+    background-color: rgb(253,246,129);
+  }
+
+  .b-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    background-color: #00D7CB;
+    height: auto;
+    padding: 10px 0;
+    border-radius: 30% 0% 0% 0px;
+  }
+
+  .b-menu_item {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .b-menu_item__link {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    padding: 10px;
+  }
+
+  .b-menu_item__link:hover {
+    color:#fff;
+  }
+
+  .b-header-responsive {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .b-start_content--left {
+    justify-content: center;
+    padding-top: 65px;
+  }
+
+  .b-start_logo {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .b-start_download {
+    margin: 30px 20px 50px 20px;
+  }
+
+  .b-servicios_name {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+}

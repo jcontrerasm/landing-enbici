@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>San Borja en Bici App</title>
+  <link rel="shortcut icon" href="./images/logo2.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="./libs/scrollflow.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <div class="container-fluid">
+    <header class="container-fluid b-header">
+      <div class="row">
+        
+        <div class="col-sm-3 b-header_logo hidden-xs" >
+          <a href="#">
+            <img src="./images/logo2.png" width="50" alt="San Borja en Bici">
+          </a>
+        </div>
+
+        <nav class="col-sm-9">
+          <div class="b-header-responsive">
+            <a href="#">
+              <img src="./images/logo2.png" width="50" alt="San Borja en Bici">
+            </a>
+            <button class="g-btn" id="btnResponsive">
+              <img src="./images/menu-responsive.png" width="40" alt="">
+            </button>
+          </div>
+          <ul class="b-menu" id="menuResponsive">
+            <li class="b-menu_item">
+              <a href="#inicio" class="b-menu_item__link">Inicio</a>
+            </li>
+            <li class="b-menu_item">
+              <a href="#" class="b-menu_item__link">Estaciones</a>
+            </li>
+            <li class="b-menu_item">
+              <a href="#" class="b-menu_item__link">Servicios</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <main class="b-main-content">
+      <section class="b-start section">
+
+        <div class="row">
+          
+          <div class="col-sm-6">
+            <div class="b-start_content b-start_content--left">
+              <h1 class="u-center-text">¡Obten una bicicleta ya!</h1>
+              <p class="u-center-text">Descarga la App gratis para dispositivos móviles Android.</p>
+              <a href="#" class="b-start_download">
+                <img src="./images/googleplay-btn.svg" alt="">
+              </a>
+              <div class="b-start_logo">
+                <img src="./images/logo2.png" alt="San Borja en Bici" width="280" class="hidden-xs">
+                <div class="visible-xs"><img src="./images/parking_public.png" alt="San Borja en Bici" width="280"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 hidden-xs">
+            <div class="b-start_content b-start_content--right">
+              <div class="triangle"></div>
+              <div class="b-start_smartphone">
+                <div><img src="./images/p2.png" alt="App en Bici"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="b-estaciones section">
+        <div class="row">
+          <div class="col-sm-6 hidden-xs">
+            <div class="b-estaciones_content b-estaciones_content--left" style="width: 100%; height:100vh;">
+              <div class="b-estaciones_container-image">
+                <img src="./images/img2.jpg" alt="" width="100%">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="b-estaciones_content b-estaciones_content--right">
+              <h2 class="u-center-text">Encuentra la estación más cercana a tu ubicación</h2>
+              <div class="b-estaciones_image"><img src="./images/icon_ubicacionestrategica.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="b-servicios section">
+        <div class="row">
+          <div class="col-sm-3 hidden-xs">
+            <div class="b-servicios_content">
+              <div><img src="./images/kallpa-wasi.png" alt="" width="180"></div>
+              <p class="b-servicios_name">Kallpa Wasi</p>
+              <p class="u-center-text">Se trata de un parque iluminado exclusivamente con energía renovable, ya sea eólica, hidráulica o solar.</p>
+            </div>
+          </div>
+          <div class="col-sm-3 hidden-xs">
+            <div class="b-servicios_content">
+              <div><img src="./images/parklet.png" alt="" width="180"></div>
+              <p class="b-servicios_name">Parklet</p>
+              <p class="u-center-text">Promueve la recuperación de espacios públicos y una cultura ciudadana que respete el medio ambiente.</p>
+            </div>
+          </div>
+          <div class="col-sm-3 hidden-xs">
+            <div class="b-servicios_content">
+              <div><img src="./images/huertos.png" alt="" width="180"></div>
+              <p class="b-servicios_name">Huertos</p>
+              <p class="u-center-text">Los productos cosechados son entregados gratuitamente a los vecinos de San Borja que llegan a la sede municipal.</p>
+            </div>
+          </div>
+          <div class="col-sm-3 hidden-xs">
+            <div class="b-servicios_content">
+              <div><img src="./images/huaca.png" alt="" width="180"></div>
+              <p class="b-servicios_name">Huaca</p>
+              <p class="u-center-text">Está conformada por una pirámide trunca, de aproximadamente 8 metros de altura, hecha de adobe.</p>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="b-servicios_content">
+              <div><img src="./images/kallpa-wasi.png" alt="" width="100"></div>
+              <p class="b-servicios_name">Kallpa Wasi</p>
+              <div><img src="./images/parklet.png" alt="" width="100"></div>
+              <p class="b-servicios_name">Parklet</p>
+            </div>
+          </div>
+          <div class="col-xs-6">
+            <div class="b-servicios_content">
+              <div><img src="./images/huertos.png" alt="" width="100"></div>
+              <p class="b-servicios_name">Huertos</p>
+              <div><img src="./images/huaca.png" alt="" width="100"></div>
+              <p class="b-servicios_name">Huaca</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+  </div>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script  type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="./libs/jquery.scrollify.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
